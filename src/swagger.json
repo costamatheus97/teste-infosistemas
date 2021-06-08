@@ -1,0 +1,82 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Infosistemas",
+    "description": "Docs Teste Infosistemas",
+    "version": "1.0.0",
+    "contact": {
+      "email": "costamatheus97@live.com"
+    }
+  },
+  "paths": {
+    "/api/cars": {
+      "post": {
+        "tags": ["Cars"],
+        "summary": "Create a car",
+        "description": "Create a new car",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/definitions/Car"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Car already exists"
+          }
+        }
+      },
+      "get": {
+        "tags": ["Cars"],
+        "summary": "List cars",
+        "description": "List all cars",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Car"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Car": {
+      "type":"object",
+      "properties": {
+        "placa": {
+          "type": "string"
+        },
+        "chassi": {
+          "type": "number"
+        },
+        "renavam": {
+          "type": "number"
+        },
+        "modelo": {
+          "type": "string"
+        },
+        "marca": {
+          "type": "string"
+        },
+        "ano": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}
