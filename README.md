@@ -74,7 +74,7 @@ Expected responses:
 - 201: Created
 - 400: Bad Request - Car already exists
 
-POST
+PUT
 
 ```
 http://localhost:3333/api/cars/:id
