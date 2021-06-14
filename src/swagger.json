@@ -27,7 +27,7 @@
           "201": {
             "description": "Created"
           },
-          "500": {
+          "400": {
             "description": "Car already exists"
           }
         }
@@ -49,6 +49,50 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "/api/cars/{id}": {
+      "put": {
+        "tags": ["Cars"],
+        "summary": "Update car",
+        "description": "Update a car",
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Car not found"
+          }
+        },
+          "parameters": {
+          "in": "path",
+          "name": "id",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      },
+      "delete": {
+        "tags": ["Cars"],
+        "summary": "Delete car",
+        "description": "Delete a car",
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Car not found"
+          }
+        },
+        "parameters": {
+          "in": "path",
+          "name": "id",
+          "required": true,
+          "schema": {
+            "type": "string"
           }
         }
       }

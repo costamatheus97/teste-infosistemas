@@ -1,9 +1,9 @@
 import { Router } from "express";
 
-import { CreateCarController } from "../modules/cars/useCases/createCar/CreateCarController";
-import { DeleteCarController } from "../modules/cars/useCases/deleteCar/DeleteCarController";
-import { ListCarsController } from "../modules/cars/useCases/listCars/ListCarsController";
-import { UpdateCarController } from "../modules/cars/useCases/updateCar/UpdateCarController";
+import { CreateCarController } from "../../../../modules/cars/useCases/createCar/CreateCarController";
+import { DeleteCarController } from "../../../../modules/cars/useCases/deleteCar/DeleteCarController";
+import { ListCarsController } from "../../../../modules/cars/useCases/listCars/ListCarsController";
+import { UpdateCarController } from "../../../../modules/cars/useCases/updateCar/UpdateCarController";
 
 const router = Router();
 

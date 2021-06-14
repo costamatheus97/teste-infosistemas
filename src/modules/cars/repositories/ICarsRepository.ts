@@ -1,22 +1,6 @@
-import { Car } from "../entities/Car";
-
-interface ICreateCarDTO {
-  plate: string;
-  chassis: number;
-  renavam: number;
-  model: string;
-  brand: string;
-  year: number;
-}
-
-interface IUpdateCarDTO {
-  plate?: string;
-  chassis?: number;
-  renavam?: number;
-  model?: string;
-  brand?: string;
-  year?: number;
-}
+import { ICreateCarDTO } from "../dtos/ICreateCarDTO";
+import { IUpdateCarDTO } from "../dtos/IUpdateCarDTO";
+import { Car } from "../infra/typeorm/entities/Car";
 
 interface ICarsRepository {
   findByChassis(chassis: number): Promise<Car>;

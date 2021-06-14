@@ -1,16 +1,15 @@
 import { inject, injectable } from "tsyringe";
 
-import { AppError } from "../../../../errors/AppError";
+import { AppError } from "../../../../shared/errors/AppError";
 import { ICarsRepository } from "../../repositories/ICarsRepository";
 
 interface IRequest {
-  id: string;
-  plate: string;
-  chassis: number;
-  renavam: number;
-  model: string;
-  brand: string;
-  year: number;
+  plate?: string;
+  chassis?: number;
+  renavam?: number;
+  model?: string;
+  brand?: string;
+  year?: number;
 }
 
 @injectable()
