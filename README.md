@@ -22,6 +22,12 @@ Then run the docker image with:
 $ docker-compose up
 ``` 
 
+After running the docker image, run the migrations:
+
+```
+$ yarn typeorm migration:run
+``` 
+
 For testing, run:
 
 ```
