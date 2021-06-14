@@ -61,11 +61,11 @@ Body example:
 ```
   {
 	"plate": "ABC-1234",
-	"chassis": "12345678",
-	"renavam": "12345678",
+	"chassis": 12345678,
+	"renavam": 12345678,
 	"model": "Roadster",
 	"brand": "Tesla",
-	"year": "2021"
+	"year": 2021
   }
 ```
 
