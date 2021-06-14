@@ -39,17 +39,21 @@ $ yarn test
 GET
 
 ```
-/api/cars
+http://localhost:3333/api/cars
 ```
 
 Expected response:
 
 - 200: Success
 
+```
+http://localhost:3333/api-docs
+```
+
 POST
 
 ```
-/api/cars
+http://localhost:3333/api/cars
 ```
 
 Body example:
@@ -73,7 +77,7 @@ Expected responses:
 POST
 
 ```
-/api/cars/:id
+http://localhost:3333/api/cars/:id
 ```
 
 Body example:
@@ -94,7 +98,7 @@ Expected responses:
 DELETE
 
 ```
-/api/cars/:id
+http://localhost:3333/api/cars/:id
 ```
 
 Expected responses:
